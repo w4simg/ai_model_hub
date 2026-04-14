@@ -16,7 +16,7 @@ function AppContent() {
       <main className="flex-grow">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/models/:id" element={<ModelDetails />} />
+          <Route path="/models/*" element={<ModelDetails />} />
           <Route path="/compare" element={<Compare />} />
           <Route path="/chat" element={<Chat />} />
         </Routes>

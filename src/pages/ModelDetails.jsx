@@ -3,7 +3,8 @@ import { ArrowLeft, ExternalLink, Zap, DollarSign, Database, Award } from 'lucid
 import modelsData from '../data/models.json';
 
 export default function ModelDetails() {
-  const { id } = useParams();
+  const params = useParams();
+  const id = params['*'];
   const model = modelsData.find((m) => m.id === id);
 
   if (!model) {
